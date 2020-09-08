@@ -1,6 +1,8 @@
-wp-config
-
 /vendor/
 /wp/
+/wp-content/
+
+wp-config.php
+
 
 
