@@ -3,7 +3,7 @@
 namespace oBabyShop;
 
 use oBabyShop\PostType\Product;
-
+use oBabyShop\Taxonomy\Category as TaxonomyCategory;
 
 class Plugin
 {
@@ -30,6 +30,14 @@ class Plugin
                 'registerPostTypes'
             ]
         );
+
+        add_action(
+            'init',
+            [
+                $this,
+                'registerTaxonomies'
+            ]
+        );
     }
 
     /**
@@ -50,6 +58,24 @@ class Plugin
         $productPostType->unregister();
     }
 
+    /**
+     * Register taxonomies
+     */
+    public function registerTaxonomies()
+    {
+        $categoryTaxonomy = new TaxonomyCategory;
+        $categoryTaxonomy->register();
+    }
+
+    /**
+     * Unregister taxonomies
+     */
+    public function unregisterTaxonomies()
+    {
+
+        $categoryTaxonomy = new TaxonomyCategory;
+        $categoryTaxonomy->unregister();
+    }
     /**
      * Set plugin hooks
      */
@@ -79,7 +105,7 @@ class Plugin
     public function activate()
     {
         $this->registerPostTypes();
-
+        $this->registerTaxonomies();
         flush_rewrite_rules();
     }
 
@@ -89,7 +115,7 @@ class Plugin
     public function deactivate()
     {
         $this->unregisterPostTypes();
-
+        $this->unregisterTaxonomies();
         flush_rewrite_rules();
     }
 }
