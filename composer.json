@@ -1,18 +1,14 @@
 {
     "name": "anne-laure/projet-vente-materiel-puericulture",
     "description": "Site internet pour la vente d'occasion de matériel de puériculture",
-    "authors": [
-        {
-            "name": "AnneLaureHYPERION",
-            "email": "annelaure.sievering@hotmail.fr"
-        }
-    ],
-    "repositories":[
-        {
-            "type":"composer",
-            "url":"https://wpackagist.org"
-        }
-    ],
+    "authors": [{
+        "name": "AnneLaureHYPERION",
+        "email": "annelaure.sievering@hotmail.fr"
+    }],
+    "repositories": [{
+        "type": "composer",
+        "url": "https://wpackagist.org"
+    }],
     "require": {
         "johnpbloch/wordpress": "^5.5",
         "wpackagist-plugin/fakerpress": "^0.5.0"
