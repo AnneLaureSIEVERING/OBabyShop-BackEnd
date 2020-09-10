@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2c6e20a358602ed7b0c24f6cc0465f1",
+    "content-hash": "a1d73917425f30f48d65ff643c3b8b41",
     "packages": [
         {
             "name": "composer/installers",
@@ -280,18 +280,20 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/fakerpress/"
-        },
+        }
+    ],
+    "packages-dev": [
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.6.4",
+            "version": "3.6.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.6.4"
+                "reference": "tags/3.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -300,7 +302,6 @@
             "homepage": "https://wordpress.org/plugins/query-monitor/"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
