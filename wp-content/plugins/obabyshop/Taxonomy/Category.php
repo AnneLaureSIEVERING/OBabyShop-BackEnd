@@ -21,7 +21,13 @@ class Category
                 'label'        => __('Catégories'),
                 'public'       => true,
                 'hierarchical' => false,
-                'show_in_rest' => true
+                'show_in_rest' => true,
+                'capabilities' => [
+                    'manage_terms' => 'manage_category',
+                    'edit_terms' => 'manage_category',
+                    'delete_terms' => 'manage_category',
+                    'assign_terms' => 'edit_products'
+                ]
             ]
         );
     }

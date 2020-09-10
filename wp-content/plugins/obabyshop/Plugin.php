@@ -4,6 +4,12 @@ namespace oBabyShop;
 
 use oBabyShop\PostType\Product;
 use oBabyShop\Taxonomy\Category as TaxonomyCategory;
+use oBabyShop\Roles\Customer;
+use oBabyShop\Capabilities\Administrator as AdministratorCapabilities;
+use oBabyShop\Capabilities\Editor as EditorCapabilities;
+use oBabyShop\Capabilities\Customer as CustomerCapabilities;
+
+
 
 class Plugin
 {
@@ -76,6 +82,45 @@ class Plugin
         $categoryTaxonomy = new TaxonomyCategory;
         $categoryTaxonomy->unregister();
     }
+
+    /**
+     * Add custom roles
+     */
+    public function addRoles()
+    {
+        $customerRole = new Customer;
+        $customerRole->add();
+    }
+
+    /**
+     * Remove custom roles
+     */
+    public function removeRoles()
+    {
+        $customerRole = new Customer;
+        $customerRole->remove();
+    }
+
+    /**
+     * Setup capabilities
+    */
+    public function setupCapabilities()
+    {
+        AdministratorCapabilities::setupCapabilities();
+        EditorCapabilities::setupCapabilities();
+        CustomerCapabilities::setupCapabilities();
+    }
+
+    /**
+     * Remove capabilities
+     */
+    public function removeCapabilities()
+    {
+        AdministratorCapabilities::removeCapabilities();
+        EditorCapabilities::removeCapabilities();
+        CustomerCapabilities::removeCapabilities();
+    }
+
     /**
      * Set plugin hooks
      */
@@ -106,7 +151,13 @@ class Plugin
     {
         $this->registerPostTypes();
         $this->registerTaxonomies();
+
         flush_rewrite_rules();
+
+        $this->addRoles();
+        $this->setupCapabilities();
+        
+        
     }
 
     /**
@@ -116,6 +167,11 @@ class Plugin
     {
         $this->unregisterPostTypes();
         $this->unregisterTaxonomies();
+
         flush_rewrite_rules();
+
+        $this->removeRoles();
+        $this->removeCapabilities();
+        
     }
 }

@@ -6,10 +6,35 @@ class Product
 {
     /**
      * Post type name
-     *
-     * @var string
      */
     public const NAME = 'product';
+
+    public const CAPABILITIES = [
+        'read'                   => 'read',
+        'edit_post'              => 'edit_product',
+        'read_post'              => 'read_product',
+        'delete_post'            => 'delete_product',
+        'edit_posts'             => 'edit_products',
+        'edit_others_posts'      => 'edit_others_products',
+        'delete_posts'           => 'delete_products',
+        'publish_posts'          => 'publish_products',
+        'read_private_posts'     => 'read_private_products',
+        'delete_private_posts'   => 'delete_private_products',
+        'delete_published_posts' => 'delete_published_products',
+        'delete_others_posts'    => 'delete_others_products',
+        'edit_private_posts'     => 'edit_private_products',
+        'edit_published_posts'   => 'edit_published_products',
+        'create_posts'           => 'create_products'
+    ];
+
+
+    // function called from the instantiation of the custom post type for setting up the meta-boxes ("Prix" and "Disponibilité")
+    public function __construct() {
+
+        add_action('add_meta_boxes',[$this,'initialisation_metaboxes']);
+        add_action('save_post',[$this, 'save_metaboxes']);
+        add_filter('map_meta_cap', [$this, 'mapMetaCaps'], 10, 4);
+    }
 
     /**
      * Register this post type
@@ -30,18 +55,19 @@ class Product
                     'thumbnail',
                     'excerpt'
                 ],
-
+                'capabilities' => self::CAPABILITIES
             ]
         );
 
         add_theme_support('post-thumbnails', [self::NAME]);
     }
 
-    public function __construct() {
-
-        add_action('add_meta_boxes',[$this,'initialisation_metaboxes']);
-        add_action('save_post',[$this, 'save_metaboxes']);
-
+    /**
+     * Unregister post type
+     */
+    public function unregister()
+    {
+        unregister_post_type(self::NAME);
     }
 
     public function initialisation_metaboxes() {
@@ -51,6 +77,7 @@ class Product
 
     }
 
+    // meta-box "Prix" function
     public function metabox_function($post) {
 
         $prix = get_post_meta($post->ID,'_prix_produit',true);
@@ -59,6 +86,7 @@ class Product
         
     }
 
+    // meta-box "Disponibilité" function
     public function dispo_produit_function($post){
         
         $dispo = get_post_meta($post->ID,'_dispo_produit',true);
@@ -71,6 +99,7 @@ class Product
 
     }
 
+    // meta-boxing data saving function
     public function save_metaboxes($post_ID){
         if(isset($_POST['prix'])){
             update_post_meta($post_ID,'_prix_produit', esc_html($_POST['prix_produit']));
@@ -81,18 +110,47 @@ class Product
         }
     }
 
-
-    /**
-     * Unregister post type
-     */
-    public function unregister()
+    public function mapMetaCaps($caps, $cap, $user_id, $args)
     {
-        unregister_post_type(self::NAME);
+        /* If editing, deleting, or reading a product, get the post and post type object. */
+        if ( 'edit_product' === $cap || 'delete_product' === $cap || 'read_product' === $cap ) {
+            $post = get_post( $args[0] );
+            $post_type = get_post_type_object( $post->post_type );
+    
+            /* Set an empty array for the caps. */
+            $caps = [];
+        }
+    
+        /* If editing a product, assign the required capability. */
+        if ( 'edit_product' == $cap ) {
+            if ( $user_id == $post->post_author ) {
+                $caps[] = $post_type->cap->edit_posts;
+            } else {
+                $caps[] = $post_type->cap->edit_others_posts;
+            }
+        }
+    
+        /* If deleting a recipe, assign the required capability. */
+        elseif ( 'delete_product' == $cap ) {
+            if ( $user_id == $post->post_author )
+                $caps[] = $post_type->cap->delete_posts;
+            else
+                $caps[] = $post_type->cap->delete_others_posts;
+        }
+    
+        /* If reading a private recipe, assign the required capability. */
+        elseif ( 'read_product' == $cap ) {
+    
+            if ( 'private' != $post->post_status )
+                $caps[] = 'read';
+            elseif ( $user_id == $post->post_author )
+                $caps[] = 'read';
+            else
+                $caps[] = $post_type->cap->read_private_posts;
+        }
+    
+        /* Return the capabilities required by the user. */
+        return $caps;
     }
-
-
-
-
-
 
 }
