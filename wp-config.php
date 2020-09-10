@@ -62,7 +62,7 @@ define('FS_METHOD', 'direct');
 
 define(
     'WP_HOME',
-    rtrim('http://localhost/OBABYSHOP/projet-vente-materiel-puericulture', '/')
+    rtrim('http://localhost/Apotheose/Back-End/projet-vente-materiel-puericulture', '/')
 );
 
 define(
@@ -97,7 +97,7 @@ define(
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* That's all, stop editing! Happy publishing. */
 
