@@ -5,6 +5,7 @@ namespace oBabyShop;
 use oBabyShop\PostType\Product;
 use oBabyShop\Taxonomy\Category as TaxonomyCategory;
 use oBabyShop\Roles\User;
+use oBabyShop\Rest\Product as RestProduct;
 use oBabyShop\Capabilities\Administrator as AdministratorCapabilities;
 use oBabyShop\Capabilities\Editor as EditorCapabilities;
 use oBabyShop\Capabilities\User as UserCapabilities;
@@ -21,6 +22,7 @@ class Plugin
     {
         $this->registerPluginHooks();
         $this->addInitActions();
+        $this->addRestInitActions();
     }
 
 
@@ -45,6 +47,29 @@ class Plugin
             ]
         );
     }
+
+    /**
+     * Add REST API init actions
+     */
+    public function addRestInitActions()
+    {
+        add_action(
+            'rest_api_init',
+            [
+                $this,
+                'registerRestMetaFields'
+            ]
+        );
+    }
+
+    /**
+     * Register custom fields in REST API
+     */
+    public function registerRestMetaFields()
+    {
+        RestProduct::register_rest_fields_meta();
+    }
+
 
     /**
      * Declare custom post types
