@@ -22,7 +22,10 @@ class Editor {
         'edit_private_products' => true,
         'edit_published_products' => true,
         'create_products' => false,
-        'manage_category' => true, 
+        'manage_category' => true,
+        'list_users' => true,
+        'edit_users' => true,
+        'delete_users' => true
     ];
 
     /**

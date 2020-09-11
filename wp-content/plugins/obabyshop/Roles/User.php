@@ -2,9 +2,9 @@
 
 namespace oBabyShop\Roles;
 
-class Customer {
+class User {
     
-    public const NAME = 'customer';
+    public const NAME = 'user';
 
     public function add()
     {

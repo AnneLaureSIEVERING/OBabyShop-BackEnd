@@ -4,10 +4,10 @@ namespace oBabyShop;
 
 use oBabyShop\PostType\Product;
 use oBabyShop\Taxonomy\Category as TaxonomyCategory;
-use oBabyShop\Roles\Customer;
+use oBabyShop\Roles\User;
 use oBabyShop\Capabilities\Administrator as AdministratorCapabilities;
 use oBabyShop\Capabilities\Editor as EditorCapabilities;
-use oBabyShop\Capabilities\Customer as CustomerCapabilities;
+use oBabyShop\Capabilities\User as UserCapabilities;
 
 
 
@@ -88,8 +88,8 @@ class Plugin
      */
     public function addRoles()
     {
-        $customerRole = new Customer;
-        $customerRole->add();
+        $userRole = new User;
+        $userRole->add();
     }
 
     /**
@@ -97,8 +97,8 @@ class Plugin
      */
     public function removeRoles()
     {
-        $customerRole = new Customer;
-        $customerRole->remove();
+        $userRole = new User;
+        $userRole->remove();
     }
 
     /**
@@ -108,7 +108,7 @@ class Plugin
     {
         AdministratorCapabilities::setupCapabilities();
         EditorCapabilities::setupCapabilities();
-        CustomerCapabilities::setupCapabilities();
+        UserCapabilities::setupCapabilities();
     }
 
     /**
@@ -118,7 +118,7 @@ class Plugin
     {
         AdministratorCapabilities::removeCapabilities();
         EditorCapabilities::removeCapabilities();
-        CustomerCapabilities::removeCapabilities();
+        UserCapabilities::removeCapabilities();
     }
 
     /**

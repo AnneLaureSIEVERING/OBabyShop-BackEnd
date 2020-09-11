@@ -2,9 +2,9 @@
 
 namespace oBabyShop\Capabilities;
 
-class Customer {
+class User {
 
-    public const ROLE_NAME = 'customer';
+    public const ROLE_NAME = 'user';
 
     public const CAPABILITIES = [
         'read' => true,
@@ -22,7 +22,8 @@ class Customer {
         'edit_private_products' => false,
         'edit_published_products' => false,
         'create_products' => true,
-        'manage_category' => false
+        'manage_category' => false,
+        'upload_files' => true
     ];
 
     /**

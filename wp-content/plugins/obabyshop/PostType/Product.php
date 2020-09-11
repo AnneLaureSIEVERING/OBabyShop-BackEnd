@@ -70,10 +70,12 @@ class Product
         unregister_post_type(self::NAME);
     }
 
+    // Add meta-box in back-office
     public function initialisation_metaboxes() {
 
         add_meta_box('prix_produit', 'Prix', [$this,'metabox_function'], self::NAME, 'normal', 'default');
-        add_meta_box('dispo_produit', 'Disponibilité du produit', [$this,'dispo_produit_function'], self::NAME, 'normal', 'default');
+        add_meta_box('dispo_produit', 'Disponibilité du produit', [$this,'dispo_product_function'], self::NAME, 'normal', 'default');
+        add_meta_box('localite_produit', 'Localité', [$this,'localite_product_function'], self::NAME, 'normal', 'default');
 
     }
 
@@ -87,26 +89,39 @@ class Product
     }
 
     // meta-box "Disponibilité" function
-    public function dispo_produit_function($post){
+    public function dispo_product_function($post){
         
         $dispo = get_post_meta($post->ID,'_dispo_produit',true);
         echo '<label for="dispo_meta">Indiquez la disponibilité du produit :</label>';
         echo '<select name="dispo_produit">';
         echo '<option ' . selected( 'Disponible', $dispo, false ) . ' value="disponible">Disponible</option>';
         echo '<option ' . selected( 'Réservé', $dispo, false ) . ' value="réservé">Réservé</option>';
-        echo '<option ' . selected( 'Indisponible', $dispo, false ) . ' value="indisponible">Indisponible</option>';
+        echo '<option ' . selected( 'Vendu', $dispo, false ) . ' value="vendu">Vendu</option>';
         echo '</select>';
 
     }
 
+    // meta-box "Localité" function
+    public function localite_product_function($post) {
+
+        $localite = get_post_meta($post->ID,'_localite_produit',true);
+        echo '<label for="meta_localite"> Localité: </label>';
+        echo '<input id="meta_localite" type="textarea" name="localite_produit" value="'.$localite.'"/>';
+        
+    }
+
     // meta-boxing data saving function
     public function save_metaboxes($post_ID){
-        if(isset($_POST['prix'])){
+        if(isset($_POST['prix_produit'])){
             update_post_meta($post_ID,'_prix_produit', esc_html($_POST['prix_produit']));
         }
 
         if(isset($_POST['dispo_produit'])) {
             update_post_meta($post_ID, '_dispo_produit', $_POST['dispo_produit']);
+        }
+
+        if(isset($_POST['dispo_produit'])) {
+            update_post_meta($post_ID, '_localite_produit', $_POST['localite_produit']);
         }
     }
 
