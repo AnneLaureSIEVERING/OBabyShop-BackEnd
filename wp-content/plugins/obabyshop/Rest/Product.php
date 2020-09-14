@@ -2,24 +2,48 @@
 
 namespace oBabyShop\Rest;
 
-use oBabyShop\PostType\Product as ProductPostType;
-
 class Product {
 
-    public static function register_rest_fields_meta() {
+    public static function register_product_meta_fields() {
 
-	    register_rest_field( 
-		    ProductPostType::NAME,
-            'meta',
-		    [
-			    
-                'get_callback' => function ($productArray) {
-                $productMeta = get_post_meta($productArray['id']);
+	    register_meta( 
+		    'post',
+            'prix_produit',
+		    array(
+                'type' => 'string',
+                'single' => true,
+                'show_in_rest' => true
+            )
+        );
 
-                return $productMeta;
-                }
-		    ]
+        register_meta( 
+		    'post',
+            'dispo_produit',
+		    array(
+                'type' => 'string',
+                'single' => true,
+                'show_in_rest' => true
+            )
+        );
+
+        register_meta( 
+		    'post',
+            'localite_produit',
+		    array(
+                'type' => 'string',
+                'single' => true,
+                'show_in_rest' => true
+            )
+        );
+
+        register_meta( 
+		    'user',
+            'municipalité',
+		    array(
+                'type' => 'string',
+                'single' => true,
+                'show_in_rest' => true
+            )
         );
     }
-
 }

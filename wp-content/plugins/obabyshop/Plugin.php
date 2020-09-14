@@ -67,7 +67,7 @@ class Plugin
      */
     public function registerRestMetaFields()
     {
-        RestProduct::register_rest_fields_meta();
+        RestProduct::register_product_meta_fields();
     }
 
 

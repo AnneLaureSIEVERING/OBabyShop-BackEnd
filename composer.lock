@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eabbf552b2144eee50c8f750b9129c8e",
+    "content-hash": "32694b150dfe994075eb53d8ee0fe1ed",
     "packages": [
         {
             "name": "composer/installers",
@@ -280,6 +280,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/fakerpress/"
+        },
+        {
+            "name": "wpackagist-plugin/jwt-auth",
+            "version": "1.4.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/jwt-auth/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/jwt-auth.zip?timestamp=1598360355"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/jwt-auth/"
         },
         {
             "name": "wpackagist-theme/twentytwenty",

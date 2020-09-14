@@ -54,7 +54,8 @@ class Product
                     'editor',
                     'author',
                     'thumbnail',
-                    'excerpt'
+                    'excerpt',
+                    'custom-fields'
                 ],
                 'capabilities' => self::CAPABILITIES
             ]
@@ -77,7 +78,6 @@ class Product
         add_meta_box('prix_produit', 'Prix', [$this,'metabox_function'], self::NAME, 'normal', 'default');
         add_meta_box('dispo_produit', 'Disponibilité du produit', [$this,'dispo_product_function'], self::NAME, 'normal', 'default');
         add_meta_box('localite_produit', 'Localité', [$this,'localite_product_function'], self::NAME, 'normal', 'default');
-
     }
 
     // meta-box "Prix" function
