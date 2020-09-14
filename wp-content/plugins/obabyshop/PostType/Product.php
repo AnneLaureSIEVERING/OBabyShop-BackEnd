@@ -121,7 +121,7 @@ class Product
             update_post_meta($post_ID, 'dispo_produit', $_POST['dispo_produit']);
         }
 
-        if(isset($_POST['dispo_produit'])) {
+        if(isset($_POST['localite_produit'])) {
             update_post_meta($post_ID, 'localite_produit', $_POST['localite_produit']);
         }
     }

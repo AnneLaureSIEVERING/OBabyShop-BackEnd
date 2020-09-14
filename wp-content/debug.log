@@ -1,0 +1,66 @@
+[14-Sep-2020 18:31:35 UTC] PHP Deprecated:  Non-static method oBabyShop\Rest\User::wc_rest_user_endpoint_handler() should not be called statically in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php on line 1050
+[14-Sep-2020 18:31:35 UTC] PHP Stack trace:
+[14-Sep-2020 18:31:35 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[14-Sep-2020 18:31:35 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[14-Sep-2020 18:31:35 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[14-Sep-2020 18:31:35 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[14-Sep-2020 18:31:35 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[14-Sep-2020 18:31:35 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[14-Sep-2020 18:31:35 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[14-Sep-2020 18:31:35 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[14-Sep-2020 18:31:35 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[14-Sep-2020 18:31:35 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[14-Sep-2020 18:31:35 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[14-Sep-2020 18:31:35 UTC] PHP Notice:  Undefined index: municipalité in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/obabyshop/Rest/User.php on line 24
+[14-Sep-2020 18:31:35 UTC] PHP Stack trace:
+[14-Sep-2020 18:31:35 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[14-Sep-2020 18:31:35 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[14-Sep-2020 18:31:35 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[14-Sep-2020 18:31:35 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[14-Sep-2020 18:31:35 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[14-Sep-2020 18:31:35 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[14-Sep-2020 18:31:35 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[14-Sep-2020 18:31:35 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[14-Sep-2020 18:31:35 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[14-Sep-2020 18:31:35 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[14-Sep-2020 18:31:35 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[14-Sep-2020 18:31:35 UTC] PHP  12. oBabyShop\Rest\User::wc_rest_user_endpoint_handler() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[14-Sep-2020 18:32:09 UTC] PHP Deprecated:  Non-static method oBabyShop\Rest\User::wc_rest_user_endpoint_handler() should not be called statically in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php on line 1050
+[14-Sep-2020 18:32:09 UTC] PHP Stack trace:
+[14-Sep-2020 18:32:09 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[14-Sep-2020 18:32:09 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[14-Sep-2020 18:32:09 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[14-Sep-2020 18:32:09 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[14-Sep-2020 18:32:09 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[14-Sep-2020 18:32:09 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[14-Sep-2020 18:32:09 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[14-Sep-2020 18:32:09 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[14-Sep-2020 18:32:09 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[14-Sep-2020 18:32:09 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[14-Sep-2020 18:32:09 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[14-Sep-2020 18:33:02 UTC] PHP Deprecated:  Non-static method oBabyShop\Rest\User::wc_rest_user_endpoint_handler() should not be called statically in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php on line 1050
+[14-Sep-2020 18:33:02 UTC] PHP Stack trace:
+[14-Sep-2020 18:33:02 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[14-Sep-2020 18:33:02 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[14-Sep-2020 18:33:02 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[14-Sep-2020 18:33:02 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[14-Sep-2020 18:33:02 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[14-Sep-2020 18:33:02 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[14-Sep-2020 18:33:02 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[14-Sep-2020 18:33:02 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[14-Sep-2020 18:33:02 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[14-Sep-2020 18:33:02 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[14-Sep-2020 18:33:02 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[14-Sep-2020 18:46:42 UTC] PHP Deprecated:  Non-static method oBabyShop\Rest\User::wc_rest_user_endpoint_handler() should not be called statically in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php on line 1050
+[14-Sep-2020 18:46:42 UTC] PHP Stack trace:
+[14-Sep-2020 18:46:42 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[14-Sep-2020 18:46:42 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[14-Sep-2020 18:46:42 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[14-Sep-2020 18:46:42 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[14-Sep-2020 18:46:42 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[14-Sep-2020 18:46:42 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[14-Sep-2020 18:46:42 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[14-Sep-2020 18:46:42 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[14-Sep-2020 18:46:42 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[14-Sep-2020 18:46:42 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[14-Sep-2020 18:46:42 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376

@@ -6,6 +6,7 @@ use oBabyShop\PostType\Product;
 use oBabyShop\Taxonomy\Category as TaxonomyCategory;
 use oBabyShop\Roles\User;
 use oBabyShop\Rest\Product as RestProduct;
+use oBabyShop\Rest\User as RestUser;
 use oBabyShop\Capabilities\Administrator as AdministratorCapabilities;
 use oBabyShop\Capabilities\Editor as EditorCapabilities;
 use oBabyShop\Capabilities\User as UserCapabilities;
@@ -60,6 +61,14 @@ class Plugin
                 'registerRestMetaFields'
             ]
         );
+
+        add_action(
+            'rest_api_init',
+            [
+                $this,
+                'registerFormRestUserEndpoints'
+            ]
+        );
     }
 
     /**
@@ -70,6 +79,10 @@ class Plugin
         RestProduct::register_product_meta_fields();
     }
 
+    public function registerFormRestUserEndpoints($request)
+    {
+        RestUser::wp_rest_user_endpoints($request);
+    }
 
     /**
      * Declare custom post types
