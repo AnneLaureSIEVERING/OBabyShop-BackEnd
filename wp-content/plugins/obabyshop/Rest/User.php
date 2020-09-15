@@ -13,6 +13,7 @@ class User {
           'callback' => __CLASS__ . '::wc_rest_user_endpoint_handler'
         ));
       }
+      // $role = sanitize_text_field($parameters['role']);
     public function wc_rest_user_endpoint_handler($request = null) {
         $response = array();
         $parameters = $request->get_json_params();
@@ -23,7 +24,7 @@ class User {
         $lastname = sanitize_text_field($parameters['last_name']);
         $address = sanitize_text_field($parameters['municipalité']);
         
-        // $role = sanitize_text_field($parameters['role']);
+        // error list 
         $error = new \WP_Error();
         if (empty($username)) {
           $error->add(400, __("Votre identifiant n'a pas été renseigné.", 'wp-rest-user'), array('status' => 400));
@@ -54,7 +55,7 @@ class User {
         if (!$user_id && email_exists($email) == false) {
           $user_id = wp_create_user($username, $password, $email);
           if (!is_wp_error($user_id)) {
-            // Ger User Meta Data (Sensitive, Password included. DO NOT pass to front end.)
+            // Get User Meta Data (Sensitive, Password included. DO NOT pass to front end.)
             $user = get_user_by('id', $user_id);
             // $user->set_role($role);
             $user->set_role('user');
@@ -62,8 +63,10 @@ class User {
             $user->first_name=$firstname;
             $user->last_name=$lastname;
 
+            // save username, email, password, firstname et lastname in DB
             wp_update_user($user);
 
+            // add user meta "municipalité"
             add_user_meta($user_id, 'municipalité', $address);
 
             // Ger User Data (Non-Sensitive, Pass to front end.)

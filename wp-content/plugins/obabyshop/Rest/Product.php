@@ -2,6 +2,8 @@
 
 namespace oBabyShop\Rest;
 
+use oBabyShop\PostType\Product as ProductPostType;
+
 class Product {
 
     public static function register_product_meta_fields() {
@@ -46,4 +48,24 @@ class Product {
             )
         );
     }
+
+    /**
+     * Add custom fields to product post type API calls
+     */
+    public static function registerCustomFields()
+    {
+       
+        register_rest_field(
+            ProductPostType::NAME,
+            'featured_media_url',
+            [
+                'get_callback' => function ( $productArray ) {
+                    
+                    $featuredMediaUrl = get_the_post_thumbnail_url( $productArray['id'] );
+
+                    return $featuredMediaUrl;
+                }
+            ]
+        );
+    } 
 }

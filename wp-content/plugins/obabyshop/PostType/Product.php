@@ -62,6 +62,7 @@ class Product
         );
 
         add_theme_support('post-thumbnails', [self::NAME]);
+        add_post_type_support([self::NAME], 'thumbnail' ); 
     }
 
     /**

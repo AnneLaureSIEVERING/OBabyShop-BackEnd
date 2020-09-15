@@ -69,6 +69,14 @@ class Plugin
                 'registerFormRestUserEndpoints'
             ]
         );
+
+        add_action(
+            'rest_api_init',
+            [
+                $this,
+                'registerRestCustomFields'
+            ]
+        );
     }
 
     /**
@@ -82,6 +90,11 @@ class Plugin
     public function registerFormRestUserEndpoints($request)
     {
         RestUser::wp_rest_user_endpoints($request);
+    }
+
+    public function registerRestCustomFields()
+    {
+        RestProduct::registerCustomFields();
     }
 
     /**
