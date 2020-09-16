@@ -12474,3 +12474,51 @@
 [15-Sep-2020 15:43:02 UTC] PHP   8. oBabyShop\Plugin->registerPostTypes() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
 [15-Sep-2020 15:43:02 UTC] PHP   9. oBabyShop\PostType\Product->register() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/obabyshop/Plugin.php:106
 [15-Sep-2020 15:43:02 UTC] PHP  10. add_post_type_support() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/obabyshop/PostType/Product.php:65
+[15-Sep-2020 18:04:39 UTC] PHP Notice:  register_rest_route est appelée de la mauvaise manière. La définition de la route de l’API REST pour <code>wp/v2/users/register</code> n’a pas l’argument <code>permission_callback</code> nécessaire. Pour les routes de l’API REST qui sont destinées à être publiques, utilisez <code>__return_true</code> comme rappel de permission. Veuillez lire <a href="https://fr.wordpress.org/support/article/debugging-in-wordpress/">Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.5.0.) in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php on line 5225
+[15-Sep-2020 18:04:39 UTC] PHP Stack trace:
+[15-Sep-2020 18:04:39 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-admin/post.php:0
+[15-Sep-2020 18:04:39 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-admin/post.php:187
+[15-Sep-2020 18:04:39 UTC] PHP   3. array_reduce() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-admin/edit-form-blocks.php:77
+[15-Sep-2020 18:04:39 UTC] PHP   4. rest_preload_api_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-admin/edit-form-blocks.php:77
+[15-Sep-2020 18:04:39 UTC] PHP   5. rest_do_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:1984
+[15-Sep-2020 18:04:39 UTC] PHP   6. rest_get_server() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:464
+[15-Sep-2020 18:04:39 UTC] PHP   7. do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:506
+[15-Sep-2020 18:04:39 UTC] PHP   8. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:478
+[15-Sep-2020 18:04:39 UTC] PHP   9. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[15-Sep-2020 18:04:39 UTC] PHP  10. oBabyShop\Plugin->registerFormRestUserEndpoints() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[15-Sep-2020 18:04:39 UTC] PHP  11. oBabyShop\Rest\User::wp_rest_user_endpoints() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/obabyshop/Plugin.php:92
+[15-Sep-2020 18:04:39 UTC] PHP  12. register_rest_route() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/obabyshop/Rest/User.php:12
+[15-Sep-2020 18:04:39 UTC] PHP  13. _doing_it_wrong() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:103
+[15-Sep-2020 18:04:39 UTC] PHP  14. trigger_error() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:5225
+[15-Sep-2020 18:05:01 UTC] PHP Notice:  register_rest_route est appelée de la mauvaise manière. La définition de la route de l’API REST pour <code>wp/v2/users/register</code> n’a pas l’argument <code>permission_callback</code> nécessaire. Pour les routes de l’API REST qui sont destinées à être publiques, utilisez <code>__return_true</code> comme rappel de permission. Veuillez lire <a href="https://fr.wordpress.org/support/article/debugging-in-wordpress/">Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.5.0.) in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php on line 5225
+[15-Sep-2020 18:05:01 UTC] PHP Stack trace:
+[15-Sep-2020 18:05:01 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-admin/post.php:0
+[15-Sep-2020 18:05:01 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-admin/post.php:187
+[15-Sep-2020 18:05:01 UTC] PHP   3. array_reduce() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-admin/edit-form-blocks.php:77
+[15-Sep-2020 18:05:01 UTC] PHP   4. rest_preload_api_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-admin/edit-form-blocks.php:77
+[15-Sep-2020 18:05:01 UTC] PHP   5. rest_do_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:1984
+[15-Sep-2020 18:05:01 UTC] PHP   6. rest_get_server() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:464
+[15-Sep-2020 18:05:01 UTC] PHP   7. do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:506
+[15-Sep-2020 18:05:01 UTC] PHP   8. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:478
+[15-Sep-2020 18:05:01 UTC] PHP   9. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[15-Sep-2020 18:05:01 UTC] PHP  10. oBabyShop\Plugin->registerFormRestUserEndpoints() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[15-Sep-2020 18:05:01 UTC] PHP  11. oBabyShop\Rest\User::wp_rest_user_endpoints() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/obabyshop/Plugin.php:92
+[15-Sep-2020 18:05:01 UTC] PHP  12. register_rest_route() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/obabyshop/Rest/User.php:12
+[15-Sep-2020 18:05:01 UTC] PHP  13. _doing_it_wrong() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:103
+[15-Sep-2020 18:05:01 UTC] PHP  14. trigger_error() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:5225
+[15-Sep-2020 18:05:36 UTC] PHP Notice:  register_rest_route est appelée de la mauvaise manière. La définition de la route de l’API REST pour <code>wp/v2/users/register</code> n’a pas l’argument <code>permission_callback</code> nécessaire. Pour les routes de l’API REST qui sont destinées à être publiques, utilisez <code>__return_true</code> comme rappel de permission. Veuillez lire <a href="https://fr.wordpress.org/support/article/debugging-in-wordpress/">Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 5.5.0.) in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php on line 5225
+[15-Sep-2020 18:05:36 UTC] PHP Stack trace:
+[15-Sep-2020 18:05:36 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-admin/post.php:0
+[15-Sep-2020 18:05:36 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-admin/post.php:187
+[15-Sep-2020 18:05:36 UTC] PHP   3. array_reduce() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-admin/edit-form-blocks.php:77
+[15-Sep-2020 18:05:36 UTC] PHP   4. rest_preload_api_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-admin/edit-form-blocks.php:77
+[15-Sep-2020 18:05:36 UTC] PHP   5. rest_do_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:1984
+[15-Sep-2020 18:05:36 UTC] PHP   6. rest_get_server() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:464
+[15-Sep-2020 18:05:36 UTC] PHP   7. do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:506
+[15-Sep-2020 18:05:36 UTC] PHP   8. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:478
+[15-Sep-2020 18:05:36 UTC] PHP   9. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[15-Sep-2020 18:05:36 UTC] PHP  10. oBabyShop\Plugin->registerFormRestUserEndpoints() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[15-Sep-2020 18:05:36 UTC] PHP  11. oBabyShop\Rest\User::wp_rest_user_endpoints() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/obabyshop/Plugin.php:92
+[15-Sep-2020 18:05:36 UTC] PHP  12. register_rest_route() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/obabyshop/Rest/User.php:12
+[15-Sep-2020 18:05:36 UTC] PHP  13. _doing_it_wrong() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:103
+[15-Sep-2020 18:05:36 UTC] PHP  14. trigger_error() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:5225

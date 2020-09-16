@@ -18,7 +18,7 @@ class Database {
     }
 
     /**
-    * Generate custom database tables
+    * Generate custom database table
     */
     public function generateCustomTables()
     {
@@ -43,5 +43,35 @@ class Database {
         ";
 
         $this->connector->query($sql);
+    }
+
+    /**
+     * Add message in DB 
+     *
+     */
+    public function addMessage($sender_id, $recipient_id, $content) {
+        $tableName = $this->connector->prefix . 'messages_users_relationships';
+
+        $sql = "
+            INSERT INTO `{$tableName}` (`sender_id`, `recipient_id`, `content`) VALUES (%d, %d, %s)
+        ";
+
+        $this->connector->query($this->connector->prepare($sql, [$sender_id, $recipient_id, $content]));
+    }
+
+    /**
+     * Recover messages in DB for a user (recipient)
+     */
+    public function getMessage($recipient_id){
+
+        $tableName = $this->connector->prefix . 'messages_users_relationships';
+
+        $sql = "
+            SELECT * FROM `{$tableName}` WHERE recipient_id=%d
+        ";
+
+        $results = $this->connector->get_results( $this->connector->prepare($sql, [$recipient_id]), ARRAY_A );
+
+        return $results;
     }
 }
