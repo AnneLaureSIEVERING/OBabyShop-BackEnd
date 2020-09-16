@@ -70,7 +70,7 @@ class Database {
             SELECT * FROM `{$tableName}` WHERE recipient_id=%d
         ";
 
-        $results = $this->connector->get_results( $this->connector->prepare($sql, [$recipient_id]), ARRAY_A );
+        $results = $this->connector->get_results( $this->connector->prepare($sql, [$recipient_id]), OBJECT );
 
         return $results;
     }
