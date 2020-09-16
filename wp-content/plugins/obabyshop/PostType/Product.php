@@ -28,13 +28,13 @@ class Product
     ];
 
 
-    // function called from the instantiation of the custom post type for setting up the meta-boxes ("Prix" and "Disponibilité")
+    // function called from the instantiation of the custom post type for setting up the meta-boxes ("Prix" and "Disponibilité" and "Localité")
     public function __construct() {
 
         add_action('add_meta_boxes',[$this,'initialisation_metaboxes']);
         add_action('save_post',[$this, 'save_metaboxes']);
         add_filter('map_meta_cap', [$this, 'mapMetaCaps'], 10, 4);
-        add_filter('excerpt_length', [$this, 'new_excerpt_length']);
+        add_filter('excerpt_length', [$this, 'new_excerpt_length'], 1000);
     }
 
     /**
@@ -67,7 +67,13 @@ class Product
 
     // Modify the word count of excerpts
     function new_excerpt_length($length) {
-        return 20;
+        global $post;
+        if ($post->post_type == 'post')
+            return 40;
+        else if ($post->post_type == self::NAME)
+            return 20;
+        else 
+            return 50;  
     }
     
     /**

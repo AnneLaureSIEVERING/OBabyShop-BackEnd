@@ -10,7 +10,8 @@ class User {
          */
         register_rest_route('wp/v2', 'users/register', array(
           'methods' => 'POST',
-          'callback' => __CLASS__ . '::wc_rest_user_endpoint_handler'
+          'callback' => __CLASS__ . '::wc_rest_user_endpoint_handler',
+          'permission_callback' => '__return_true'
         ));
       }
       // $role = sanitize_text_field($parameters['role']);
