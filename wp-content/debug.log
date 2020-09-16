@@ -12668,3 +12668,23 @@
 [16-Sep-2020 11:45:46 UTC] PHP  12. register_rest_route() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/obabyshop/Rest/User.php:12
 [16-Sep-2020 11:45:46 UTC] PHP  13. _doing_it_wrong() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:103
 [16-Sep-2020 11:45:46 UTC] PHP  14. trigger_error() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:5225
+[16-Sep-2020 12:00:44 UTC] PHP Notice:  Undefined index: file in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php on line 284
+[16-Sep-2020 12:00:44 UTC] PHP Stack trace:
+[16-Sep-2020 12:00:44 UTC] PHP   1. QM_Collector_PHP_Errors->exception_handler() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php:0
+[16-Sep-2020 12:00:44 UTC] PHP   2. QM_Collector_PHP_Errors->output_fatal() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php:79
+[16-Sep-2020 12:00:44 UTC] PHP Notice:  Undefined index: line in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php on line 284
+[16-Sep-2020 12:00:44 UTC] PHP Stack trace:
+[16-Sep-2020 12:00:44 UTC] PHP   1. QM_Collector_PHP_Errors->exception_handler() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php:0
+[16-Sep-2020 12:00:44 UTC] PHP   2. QM_Collector_PHP_Errors->output_fatal() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php:79
+[16-Sep-2020 12:00:44 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/obabyshop/PostType/Product.php on line 73
+[16-Sep-2020 12:00:44 UTC] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[16-Sep-2020 12:10:03 UTC] PHP Notice:  Undefined index: file in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php on line 284
+[16-Sep-2020 12:10:03 UTC] PHP Stack trace:
+[16-Sep-2020 12:10:03 UTC] PHP   1. QM_Collector_PHP_Errors->exception_handler() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php:0
+[16-Sep-2020 12:10:03 UTC] PHP   2. QM_Collector_PHP_Errors->output_fatal() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php:79
+[16-Sep-2020 12:10:03 UTC] PHP Notice:  Undefined index: line in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php on line 284
+[16-Sep-2020 12:10:03 UTC] PHP Stack trace:
+[16-Sep-2020 12:10:03 UTC] PHP   1. QM_Collector_PHP_Errors->exception_handler() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php:0
+[16-Sep-2020 12:10:03 UTC] PHP   2. QM_Collector_PHP_Errors->output_fatal() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php:79
+[16-Sep-2020 12:10:03 UTC] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM) in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/obabyshop/PostType/Product.php on line 69
+[16-Sep-2020 12:10:03 UTC] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
