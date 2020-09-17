@@ -43,18 +43,15 @@ class Message {
      */
     public static function post_user_message($request = null) {
 
-        global $post;
-
         $sender_id =  get_current_user_id();
-
-        $recipient_id = $post->post_author;
 
         $parameters = $request->get_json_params();
         $content = sanitize_text_field($parameters['content']);
+        $recipient_id = intval(sanitize_text_field($parameters['recipient_id']));
         
         $database = new Database();
         $database->addMessage($sender_id, $recipient_id, $content);
-
+        
         $error = new \WP_Error();
         if (empty($sender_id)) {
           $error->add(400, __("l'ID de l'expéditeur n'est pas renseigné"), array('status' => 400));
