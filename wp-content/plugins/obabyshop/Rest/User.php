@@ -23,7 +23,7 @@ class User {
         $password = sanitize_text_field($parameters['password']);
         $firstname = sanitize_text_field($parameters['first_name']);
         $lastname = sanitize_text_field($parameters['last_name']);
-        $address = sanitize_text_field($parameters['municipalité']);
+        $address = sanitize_text_field($parameters['city']);
         
         // error list 
         $error = new \WP_Error();
@@ -67,8 +67,8 @@ class User {
             // save username, email, password, firstname et lastname in DB
             wp_update_user($user);
 
-            // add user meta "municipalité"
-            add_user_meta($user_id, 'municipalité', $address);
+            // add user meta "city"
+            add_user_meta($user_id, 'city', $address);
 
             // Ger User Data (Non-Sensitive, Pass to front end.)
             $response['code'] = 200;
@@ -80,6 +80,6 @@ class User {
           $error->add(406, __("Un compte utilisant cet email, existe déjà. Veuillez vous connecter ou générer un nouveau mot de passe", 'wp-rest-user'), array('status' => 400));
           return $error;
         }
-        return new \WP_REST_Response($response, 123);
+        return new \WP_REST_Response($response);
       }
 }

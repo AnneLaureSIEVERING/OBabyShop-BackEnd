@@ -40,7 +40,7 @@ class Product {
 
         register_meta( 
 		    'user',
-            'municipalité',
+            'city',
 		    array(
                 'type' => 'string',
                 'single' => true,

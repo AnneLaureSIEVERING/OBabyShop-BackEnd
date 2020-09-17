@@ -56,7 +56,7 @@ class Database {
             INSERT INTO `{$tableName}` (`sender_id`, `recipient_id`, `content`) VALUES (%d, %d, %s)
         ";
 
-        $this->connector->query($this->connector->prepare($sql, [$sender_id, $recipient_id, $content]));
+        $this->connector->query($this->connector->prepare($sql, [$sender_id, $recipient_id, $content]), OBJECT);
     }
 
     /**
@@ -64,14 +64,20 @@ class Database {
      */
     public function getMessage($recipient_id){
 
-        $tableName = $this->connector->prefix . 'messages_users_relationships';
+        $tableNameMessage = $this->connector->prefix . 'messages_users_relationships';
+        $tableNameUser = $this->connector->prefix . 'users';
 
         $sql = "
-            SELECT * FROM `{$tableName}` WHERE recipient_id=%d
+            SELECT messages.`message_id`, messages.`sender_id`, messages.`recipient_id`, messages.`content`, messages.`date`, user.`ID`, user.`user_nicename`
+            FROM `{$tableNameMessage}` AS messages
+            INNER JOIN `{$tableNameUser}` AS user
+            ON messages.`sender_id` = user.`ID`
+            WHERE recipient_id = %d
         ";
 
         $results = $this->connector->get_results( $this->connector->prepare($sql, [$recipient_id]), OBJECT );
 
         return $results;
     }
+
 }
