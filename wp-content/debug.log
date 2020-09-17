@@ -992,3 +992,37 @@ Stack trace:
 [17-Sep-2020 13:27:25 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
             INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
          faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 13:33:46 UTC] PHP Notice:  Trying to get property 'author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 13:33:46 UTC] PHP Stack trace:
+[17-Sep-2020 13:33:46 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 13:33:46 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 13:33:46 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 13:33:46 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 13:33:46 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 13:33:46 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 13:33:46 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 13:33:46 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 13:33:46 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 13:33:46 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 13:33:46 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 13:33:46 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 13:33:46 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 13:53:55 UTC] PHP Notice:  Trying to get property 'author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 13:53:55 UTC] PHP Stack trace:
+[17-Sep-2020 13:53:55 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 13:53:55 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 13:53:55 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 13:53:55 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 13:53:55 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 13:53:55 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 13:53:55 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 13:53:55 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 13:53:55 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 13:53:55 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 13:53:55 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 13:53:55 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 13:53:55 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage

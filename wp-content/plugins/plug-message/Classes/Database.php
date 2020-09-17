@@ -62,7 +62,7 @@ class Database {
     /**
      * Recover messages in DB for a user (recipient)
      */
-    public function getMessage($recipient_id){
+    public function getMessages($recipient_id){
 
         $tableNameMessage = $this->connector->prefix . 'messages_users_relationships';
         $tableNameUser = $this->connector->prefix . 'users';

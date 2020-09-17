@@ -13,7 +13,7 @@ class Message {
          */
         register_rest_route('wp/v2', '/users/messages', array(
         'methods' => 'GET',
-        'callback' => __CLASS__  . '::get_user_message',
+        'callback' => __CLASS__  . '::get_user_messages',
         'permission_callback' => '__return_true'
         ));
 
@@ -27,17 +27,17 @@ class Message {
     /**
      * function to get current user message
      */
-    public static function get_user_message() {
+    public static function get_user_messages() {
 
         $recipient_id = get_current_user_id();
         
         $database = new Database();
-        $result= $database->getMessage($recipient_id);
+        $results= $database->getMessages($recipient_id);
         
-        return new \WP_REST_Response($result);
+        return new \WP_REST_Response($results);
     }
 
-
+    
     /**
      * function to post a message
      */
@@ -47,7 +47,7 @@ class Message {
 
         $sender_id =  get_current_user_id();
 
-        $recipient_id = 
+        $recipient_id = $post->post_author;
 
         $parameters = $request->get_json_params();
         $content = sanitize_text_field($parameters['content']);
