@@ -1,8 +1,5 @@
-/vendor/
-/wp/
-/wp-content/
-
 wp-config.php
+/vendor/
 
 
 

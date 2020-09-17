@@ -1,0 +1,1090 @@
+[16-Sep-2020 13:09:25 UTC] PHP Deprecated:  Non-static method oBabyShop\Rest\User::wc_rest_user_endpoint_handler() should not be called statically in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php on line 1050
+[16-Sep-2020 13:09:25 UTC] PHP Stack trace:
+[16-Sep-2020 13:09:25 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[16-Sep-2020 13:09:25 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[16-Sep-2020 13:09:25 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[16-Sep-2020 13:09:25 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[16-Sep-2020 13:09:25 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[16-Sep-2020 13:09:25 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[16-Sep-2020 13:09:25 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[16-Sep-2020 13:09:25 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[16-Sep-2020 13:09:25 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[16-Sep-2020 13:09:25 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[16-Sep-2020 13:09:25 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[16-Sep-2020 14:28:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Message\Rest\EndpointsMessage' not found in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php:37
+Stack trace:
+#0 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): Message\Plugin->registerRestEndpoints(Object(WP_REST_Server))
+#1 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(506): do_action('rest_api_init', Object(WP_REST_Server))
+#4 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(332): rest_get_server()
+#5 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php( in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php on line 37
+[16-Sep-2020 14:33:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Message\Rest\EndpointsMessage' not found in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php:37
+Stack trace:
+#0 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): Message\Plugin->registerRestEndpoints(Object(WP_REST_Server))
+#1 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(506): do_action('rest_api_init', Object(WP_REST_Server))
+#4 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(332): rest_get_server()
+#5 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php( in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php on line 37
+[16-Sep-2020 14:42:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Message\Rest\EndpointsMessage' not found in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php:37
+Stack trace:
+#0 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): Message\Plugin->registerRestEndpoints(Object(WP_REST_Server))
+#1 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(506): do_action('rest_api_init', Object(WP_REST_Server))
+#4 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(332): rest_get_server()
+#5 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php( in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php on line 37
+[16-Sep-2020 14:55:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Message\Rest\EndpointsMessage' not found in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php:38
+Stack trace:
+#0 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): Message\Plugin->registerRestEndpoints(Object(WP_REST_Server))
+#1 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(506): do_action('rest_api_init', Object(WP_REST_Server))
+#4 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(332): rest_get_server()
+#5 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php( in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php on line 38
+[16-Sep-2020 14:58:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Message\Rest\EndpointsMessage' not found in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php:38
+Stack trace:
+#0 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): Message\Plugin->registerRestEndpoints(Object(WP_REST_Server))
+#1 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(506): do_action('rest_api_init', Object(WP_REST_Server))
+#4 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(332): rest_get_server()
+#5 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php( in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php on line 38
+[16-Sep-2020 15:00:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Message\Rest\EndpointsMessage' not found in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php:38
+Stack trace:
+#0 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): Message\Plugin->registerRestEndpoints(Object(WP_REST_Server))
+#1 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(506): do_action('rest_api_init', Object(WP_REST_Server))
+#4 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(332): rest_get_server()
+#5 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php( in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php on line 38
+[16-Sep-2020 15:00:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Message\Rest\EndpointsMessage' not found in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php:38
+Stack trace:
+#0 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): Message\Plugin->registerRestEndpoints(Object(WP_REST_Server))
+#1 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(506): do_action('rest_api_init', Object(WP_REST_Server))
+#4 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(332): rest_get_server()
+#5 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php( in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php on line 38
+[16-Sep-2020 15:00:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Message\Rest\EndpointsMessage' not found in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php:38
+Stack trace:
+#0 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): Message\Plugin->registerRestEndpoints(Object(WP_REST_Server))
+#1 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(506): do_action('rest_api_init', Object(WP_REST_Server))
+#4 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(332): rest_get_server()
+#5 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php( in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php on line 38
+[16-Sep-2020 15:00:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Message\Rest\EndpointsMessage' not found in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php:38
+Stack trace:
+#0 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): Message\Plugin->registerRestEndpoints(Object(WP_REST_Server))
+#1 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(506): do_action('rest_api_init', Object(WP_REST_Server))
+#4 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(332): rest_get_server()
+#5 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php( in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php on line 38
+[16-Sep-2020 17:02:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Message\Rest\EndpointsMessage' not found in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php:38
+Stack trace:
+#0 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): Message\Plugin->registerRestEndpoints(Object(WP_REST_Server))
+#1 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(506): do_action('rest_api_init', Object(WP_REST_Server))
+#4 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(332): rest_get_server()
+#5 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php( in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php on line 38
+[16-Sep-2020 17:08:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Message\Rest\EndpointsMessage' not found in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php:38
+Stack trace:
+#0 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): Message\Plugin->registerRestEndpoints(Object(WP_REST_Server))
+#1 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(506): do_action('rest_api_init', Object(WP_REST_Server))
+#4 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(332): rest_get_server()
+#5 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php( in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php on line 38
+[16-Sep-2020 17:11:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Message\Rest\Endpoints' not found in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php:38
+Stack trace:
+#0 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): Message\Plugin->registerRestEndpoints(Object(WP_REST_Server))
+#1 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(506): do_action('rest_api_init', Object(WP_REST_Server))
+#4 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(332): rest_get_server()
+#5 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): r in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php on line 38
+[16-Sep-2020 17:14:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Message\Rest\Endpoints' not found in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php:38
+Stack trace:
+#0 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): Message\Plugin->registerRestEndpoints(Object(WP_REST_Server))
+#1 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(506): do_action('rest_api_init', Object(WP_REST_Server))
+#4 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(332): rest_get_server()
+#5 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): r in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php on line 38
+[16-Sep-2020 17:22:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Message\Rest\Endpoints' not found in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php:38
+Stack trace:
+#0 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): Message\Plugin->registerRestEndpoints(Object(WP_REST_Server))
+#1 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(506): do_action('rest_api_init', Object(WP_REST_Server))
+#4 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(332): rest_get_server()
+#5 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): r in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Plugin.php on line 38
+[16-Sep-2020 17:30:01 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, object given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[16-Sep-2020 17:30:01 UTC] PHP Stack trace:
+[16-Sep-2020 17:30:01 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[16-Sep-2020 17:30:01 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[16-Sep-2020 17:30:01 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[16-Sep-2020 17:30:01 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[16-Sep-2020 17:30:01 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[16-Sep-2020 17:30:01 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[16-Sep-2020 17:30:01 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[16-Sep-2020 17:30:01 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[16-Sep-2020 17:30:01 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[16-Sep-2020 17:30:01 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[16-Sep-2020 17:30:01 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[16-Sep-2020 17:30:01 UTC] PHP  12. Message\Rest\Message::get_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[16-Sep-2020 17:30:01 UTC] PHP  13. Message\Classes\Database->getMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:35
+[16-Sep-2020 17:30:01 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:73
+[16-Sep-2020 17:30:01 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[16-Sep-2020 17:30:01 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[16-Sep-2020 17:30:01 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[16-Sep-2020 17:30:01 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[16-Sep-2020 17:30:44 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, object given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[16-Sep-2020 17:30:44 UTC] PHP Stack trace:
+[16-Sep-2020 17:30:44 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[16-Sep-2020 17:30:44 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[16-Sep-2020 17:30:44 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[16-Sep-2020 17:30:44 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[16-Sep-2020 17:30:44 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[16-Sep-2020 17:30:44 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[16-Sep-2020 17:30:44 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[16-Sep-2020 17:30:44 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[16-Sep-2020 17:30:44 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[16-Sep-2020 17:30:44 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[16-Sep-2020 17:30:44 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[16-Sep-2020 17:30:44 UTC] PHP  12. Message\Rest\Message::get_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[16-Sep-2020 17:30:44 UTC] PHP  13. Message\Classes\Database->getMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:35
+[16-Sep-2020 17:30:44 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:73
+[16-Sep-2020 17:30:44 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[16-Sep-2020 17:30:44 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[16-Sep-2020 17:30:44 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[16-Sep-2020 17:30:44 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[16-Sep-2020 17:30:56 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, object given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[16-Sep-2020 17:30:56 UTC] PHP Stack trace:
+[16-Sep-2020 17:30:56 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[16-Sep-2020 17:30:56 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[16-Sep-2020 17:30:56 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[16-Sep-2020 17:30:56 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[16-Sep-2020 17:30:56 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[16-Sep-2020 17:30:56 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[16-Sep-2020 17:30:56 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[16-Sep-2020 17:30:56 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[16-Sep-2020 17:30:56 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[16-Sep-2020 17:30:56 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[16-Sep-2020 17:30:56 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[16-Sep-2020 17:30:56 UTC] PHP  12. Message\Rest\Message::get_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[16-Sep-2020 17:30:56 UTC] PHP  13. Message\Classes\Database->getMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:35
+[16-Sep-2020 17:30:56 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:73
+[16-Sep-2020 17:30:56 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[16-Sep-2020 17:30:56 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[16-Sep-2020 17:30:56 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[16-Sep-2020 17:30:56 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 08:43:43 UTC] PHP Notice:  Undefined property: WP_REST_Request::$sender_id in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 43
+[17-Sep-2020 08:43:43 UTC] PHP Stack trace:
+[17-Sep-2020 08:43:43 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 08:43:43 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 08:43:43 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 08:43:43 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 08:43:43 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 08:43:43 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 08:43:43 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 08:43:43 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 08:43:43 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 08:43:43 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 08:43:43 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 08:43:43 UTC] PHP  12. Message\Rest\Message::get_sender_name() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 08:43:47 UTC] PHP Notice:  Undefined property: WP_REST_Request::$sender_id in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 43
+[17-Sep-2020 08:43:47 UTC] PHP Stack trace:
+[17-Sep-2020 08:43:47 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 08:43:47 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 08:43:47 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 08:43:47 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 08:43:47 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 08:43:47 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 08:43:47 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 08:43:47 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 08:43:47 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 08:43:47 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 08:43:47 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 08:43:47 UTC] PHP  12. Message\Rest\Message::get_sender_name() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 09:03:11 UTC] PHP Warning:  vsprintf(): Too few arguments in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1399
+[17-Sep-2020 09:03:11 UTC] PHP Stack trace:
+[17-Sep-2020 09:03:11 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 09:03:11 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 09:03:11 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 09:03:11 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 09:03:11 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 09:03:11 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 09:03:11 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 09:03:11 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 09:03:11 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 09:03:11 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 09:03:11 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 09:03:11 UTC] PHP  12. Message\Rest\Message::get_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 09:03:11 UTC] PHP  13. Message\Classes\Database->getMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:35
+[17-Sep-2020 09:03:11 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:79
+[17-Sep-2020 09:03:11 UTC] PHP  15. vsprintf() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1399
+[17-Sep-2020 09:03:15 UTC] PHP Warning:  vsprintf(): Too few arguments in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1399
+[17-Sep-2020 09:03:15 UTC] PHP Stack trace:
+[17-Sep-2020 09:03:15 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 09:03:15 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 09:03:15 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 09:03:15 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 09:03:15 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 09:03:15 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 09:03:15 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 09:03:15 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 09:03:15 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 09:03:15 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 09:03:15 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 09:03:15 UTC] PHP  12. Message\Rest\Message::get_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 09:03:15 UTC] PHP  13. Message\Classes\Database->getMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:35
+[17-Sep-2020 09:03:15 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:79
+[17-Sep-2020 09:03:15 UTC] PHP  15. vsprintf() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1399
+[17-Sep-2020 09:56:06 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 09:56:06 UTC] PHP Stack trace:
+[17-Sep-2020 09:56:06 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 09:56:06 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 09:56:06 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 09:56:06 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 09:56:06 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 09:56:06 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 09:56:06 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 09:56:06 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 09:56:06 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 09:56:06 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 09:56:06 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 09:56:06 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 09:56:06 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:54
+[17-Sep-2020 09:56:06 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 09:56:06 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 09:56:06 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 09:56:06 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 09:56:06 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 09:56:06 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'coucou oui le produit est toujours disponible')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 09:59:34 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 09:59:34 UTC] PHP Stack trace:
+[17-Sep-2020 09:59:34 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 09:59:34 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 09:59:34 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 09:59:34 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 09:59:34 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 09:59:34 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 09:59:34 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 09:59:34 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 09:59:34 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 09:59:34 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 09:59:34 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 09:59:34 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 09:59:34 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:54
+[17-Sep-2020 09:59:34 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 09:59:34 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 09:59:34 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 09:59:34 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 09:59:34 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 09:59:34 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'coucou oui le produit est toujours disponible')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 09:59:58 UTC] PHP Notice:  Undefined variable: recipient_id in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 52
+[17-Sep-2020 09:59:58 UTC] PHP Stack trace:
+[17-Sep-2020 09:59:58 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 09:59:58 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 09:59:58 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 09:59:58 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 09:59:58 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 09:59:58 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 09:59:58 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 09:59:58 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 09:59:58 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 09:59:58 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 09:59:58 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 09:59:58 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 09:59:58 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'coucou oui le produit est toujours disponible')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 10:02:22 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 10:02:22 UTC] PHP Stack trace:
+[17-Sep-2020 10:02:22 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 10:02:22 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 10:02:22 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 10:02:22 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 10:02:22 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 10:02:22 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 10:02:22 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 10:02:22 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 10:02:22 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 10:02:22 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 10:02:22 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 10:02:22 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 10:02:22 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:54
+[17-Sep-2020 10:02:22 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 10:02:22 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 10:02:22 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 10:02:22 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 10:02:22 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 10:02:23 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'coucou oui le produit est toujours disponible')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 11:09:06 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 11:09:06 UTC] PHP Stack trace:
+[17-Sep-2020 11:09:06 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 11:09:06 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 11:09:06 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 11:09:06 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 11:09:06 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 11:09:06 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 11:09:06 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 11:09:06 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 11:09:06 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 11:09:06 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 11:09:06 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 11:09:06 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 11:09:06 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:54
+[17-Sep-2020 11:09:06 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 11:09:06 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 11:09:06 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 11:09:06 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 11:09:06 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 11:09:06 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'coucou oui le produit est toujours disponible')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 11:09:17 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 11:09:17 UTC] PHP Stack trace:
+[17-Sep-2020 11:09:17 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 11:09:17 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 11:09:17 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 11:09:17 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 11:09:17 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 11:09:17 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 11:09:17 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 11:09:17 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 11:09:17 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 11:09:17 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 11:09:17 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 11:09:17 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 11:09:17 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:54
+[17-Sep-2020 11:09:17 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 11:09:17 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 11:09:17 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 11:09:17 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 11:09:17 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 11:09:17 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'coucou oui le produit est toujours disponible')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 11:09:29 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 11:09:29 UTC] PHP Stack trace:
+[17-Sep-2020 11:09:29 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 11:09:29 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 11:09:29 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 11:09:29 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 11:09:29 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 11:09:29 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 11:09:29 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 11:09:29 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 11:09:29 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 11:09:29 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 11:09:29 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 11:09:29 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 11:09:29 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:54
+[17-Sep-2020 11:09:29 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 11:09:29 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 11:09:29 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 11:09:29 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 11:09:29 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 11:09:29 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'coucou oui le produit est toujours disponible')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 11:28:13 UTC] PHP Notice:  Trying to get property 'post_author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 11:28:13 UTC] PHP Stack trace:
+[17-Sep-2020 11:28:13 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 11:28:13 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 11:28:13 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 11:28:13 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 11:28:13 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 11:28:13 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 11:28:13 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 11:28:13 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 11:28:13 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 11:28:13 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 11:28:13 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 11:28:13 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 11:28:13 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 11:34:56 UTC] PHP Notice:  Trying to get property 'post_author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 11:34:56 UTC] PHP Stack trace:
+[17-Sep-2020 11:34:56 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 11:34:56 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 11:34:56 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 11:34:56 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 11:34:56 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 11:34:56 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 11:34:56 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 11:34:56 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 11:34:56 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 11:34:56 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 11:34:56 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 11:34:56 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 11:34:56 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 11:34:56 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Error as array in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:59
+Stack trace:
+#0 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php(1050): Message\Rest\Message::post_user_message(Object(WP_REST_Request))
+#1 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php(376): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#2 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php(339): WP_REST_Server->serve_request('/wp/v2/users/me...')
+#3 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(287): rest_api_loaded(Object(WP))
+#4 /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/Apot in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 59
+[17-Sep-2020 11:35:13 UTC] PHP Notice:  Trying to get property 'post_author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 11:35:13 UTC] PHP Stack trace:
+[17-Sep-2020 11:35:13 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 11:35:13 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 11:35:13 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 11:35:13 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 11:35:13 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 11:35:13 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 11:35:13 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 11:35:13 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 11:35:13 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 11:35:13 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 11:35:13 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 11:35:13 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 11:35:13 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 11:40:46 UTC] PHP Notice:  Trying to get property 'post_author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 11:40:46 UTC] PHP Stack trace:
+[17-Sep-2020 11:40:46 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 11:40:46 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 11:40:46 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 11:40:46 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 11:40:46 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 11:40:46 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 11:40:46 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 11:40:46 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 11:40:46 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 11:40:46 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 11:40:46 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 11:40:46 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 11:40:46 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 11:40:51 UTC] PHP Notice:  Trying to get property 'post_author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 11:40:51 UTC] PHP Stack trace:
+[17-Sep-2020 11:40:51 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 11:40:51 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 11:40:51 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 11:40:51 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 11:40:51 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 11:40:51 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 11:40:51 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 11:40:51 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 11:40:51 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 11:40:51 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 11:40:51 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 11:40:51 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 11:40:51 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 11:56:57 UTC] PHP Notice:  Trying to get property 'post_author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 11:56:57 UTC] PHP Stack trace:
+[17-Sep-2020 11:56:57 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 11:56:57 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 11:56:57 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 11:56:57 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 11:56:57 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 11:56:57 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 11:56:57 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 11:56:57 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 11:56:57 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 11:56:57 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 11:56:57 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 11:56:57 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 11:56:57 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 11:57:13 UTC] PHP Notice:  Trying to get property 'post_author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 11:57:13 UTC] PHP Stack trace:
+[17-Sep-2020 11:57:13 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 11:57:13 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 11:57:13 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 11:57:13 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 11:57:13 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 11:57:13 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 11:57:13 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 11:57:13 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 11:57:13 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 11:57:13 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 11:57:13 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 11:57:13 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 11:57:13 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:00:40 UTC] PHP Notice:  Trying to get property 'post_author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 12:00:40 UTC] PHP Stack trace:
+[17-Sep-2020 12:00:40 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:00:40 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:00:40 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:00:40 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:00:40 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:00:40 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:00:40 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:00:40 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:00:40 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:00:40 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:00:40 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:00:40 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:00:40 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:01:24 UTC] PHP Notice:  Trying to get property 'post_author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 12:01:24 UTC] PHP Stack trace:
+[17-Sep-2020 12:01:24 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:01:24 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:01:24 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:01:24 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:01:24 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:01:24 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:01:24 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:01:24 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:01:24 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:01:24 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:01:24 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:01:24 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:01:24 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:04:19 UTC] PHP Notice:  Trying to get property 'post_author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 12:04:19 UTC] PHP Stack trace:
+[17-Sep-2020 12:04:19 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:04:19 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:04:19 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:04:19 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:04:19 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:04:19 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:04:19 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:04:19 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:04:19 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:04:19 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:04:19 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:04:19 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:04:19 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:12:18 UTC] PHP Notice:  Undefined index: file in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php on line 284
+[17-Sep-2020 12:12:18 UTC] PHP Stack trace:
+[17-Sep-2020 12:12:18 UTC] PHP   1. QM_Collector_PHP_Errors->exception_handler() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php:0
+[17-Sep-2020 12:12:18 UTC] PHP   2. QM_Collector_PHP_Errors->output_fatal() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php:79
+[17-Sep-2020 12:12:18 UTC] PHP Notice:  Undefined index: line in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php on line 284
+[17-Sep-2020 12:12:18 UTC] PHP Stack trace:
+[17-Sep-2020 12:12:18 UTC] PHP   1. QM_Collector_PHP_Errors->exception_handler() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php:0
+[17-Sep-2020 12:12:18 UTC] PHP   2. QM_Collector_PHP_Errors->output_fatal() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/query-monitor/collectors/php_errors.php:79
+[17-Sep-2020 12:12:18 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 68
+[17-Sep-2020 12:12:18 UTC] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[17-Sep-2020 12:13:19 UTC] PHP Notice:  Trying to get property 'post_author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 12:13:19 UTC] PHP Stack trace:
+[17-Sep-2020 12:13:19 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:13:19 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:13:19 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:13:19 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:13:19 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:13:19 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:13:19 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:13:19 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:13:19 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:13:19 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:13:19 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:13:19 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:13:19 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:13:37 UTC] PHP Notice:  Trying to get property 'post_author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 12:13:37 UTC] PHP Stack trace:
+[17-Sep-2020 12:13:37 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:13:37 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:13:37 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:13:37 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:13:37 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:13:37 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:13:37 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:13:37 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:13:37 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:13:37 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:13:37 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:13:37 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:13:37 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:26:08 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 12:26:08 UTC] PHP Stack trace:
+[17-Sep-2020 12:26:08 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:26:08 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:26:08 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:26:08 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:26:08 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:26:08 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:26:08 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:26:08 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:26:08 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:26:08 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:26:08 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:26:08 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:26:08 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:70
+[17-Sep-2020 12:26:08 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 12:26:08 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:26:08 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:26:08 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 12:26:08 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 12:26:08 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:28:41 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 12:28:41 UTC] PHP Stack trace:
+[17-Sep-2020 12:28:41 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:28:41 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:28:41 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:28:41 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:28:41 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:28:41 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:28:41 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:28:41 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:28:41 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:28:41 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:28:41 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:28:41 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:28:41 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:70
+[17-Sep-2020 12:28:41 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 12:28:41 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:28:41 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:28:41 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 12:28:41 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 12:28:42 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:29:33 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 12:29:33 UTC] PHP Stack trace:
+[17-Sep-2020 12:29:33 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:29:33 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:29:33 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:29:33 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:29:33 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:29:33 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:29:33 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:29:33 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:29:33 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:29:33 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:29:33 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:29:33 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:29:33 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:70
+[17-Sep-2020 12:29:33 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 12:29:33 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:29:33 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:29:33 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 12:29:33 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 12:29:34 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:37:24 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 12:37:24 UTC] PHP Stack trace:
+[17-Sep-2020 12:37:24 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:37:24 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:37:24 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:37:24 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:37:24 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:37:24 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:37:24 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:37:24 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:37:24 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:37:24 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:37:24 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:37:24 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:37:24 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:56
+[17-Sep-2020 12:37:24 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 12:37:24 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:37:24 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:37:24 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 12:37:24 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 12:37:24 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:37:24 UTC] PHP Notice:  Undefined variable: data in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 74
+[17-Sep-2020 12:37:24 UTC] PHP Stack trace:
+[17-Sep-2020 12:37:24 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:37:24 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:37:24 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:37:24 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:37:24 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:37:24 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:37:24 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:37:24 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:37:24 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:37:24 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:37:24 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:37:24 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:37:50 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 12:37:50 UTC] PHP Stack trace:
+[17-Sep-2020 12:37:50 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:37:50 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:37:50 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:37:50 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:37:50 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:37:50 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:37:50 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:37:50 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:37:50 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:37:50 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:37:50 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:37:50 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:37:50 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:56
+[17-Sep-2020 12:37:50 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 12:37:50 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:37:50 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:37:50 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 12:37:50 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 12:37:50 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:39:07 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 12:39:07 UTC] PHP Stack trace:
+[17-Sep-2020 12:39:07 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:39:07 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:39:07 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:39:07 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:39:07 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:39:07 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:39:07 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:39:07 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:39:07 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:39:07 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:39:07 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:39:07 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:39:07 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:56
+[17-Sep-2020 12:39:07 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 12:39:07 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:39:07 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:39:07 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 12:39:07 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 12:39:07 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:39:33 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 12:39:33 UTC] PHP Stack trace:
+[17-Sep-2020 12:39:33 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:39:33 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:39:33 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:39:33 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:39:33 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:39:33 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:39:33 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:39:33 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:39:33 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:39:33 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:39:33 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:39:33 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:39:33 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:56
+[17-Sep-2020 12:39:33 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 12:39:33 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:39:33 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:39:33 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 12:39:33 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 12:39:33 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:40:16 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 12:40:16 UTC] PHP Stack trace:
+[17-Sep-2020 12:40:16 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:40:16 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:40:16 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:40:16 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:40:16 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:40:16 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:40:16 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:40:16 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:40:16 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:40:16 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:40:16 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:40:16 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:40:16 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:56
+[17-Sep-2020 12:40:16 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 12:40:16 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:40:16 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:40:16 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 12:40:16 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 12:40:16 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:41:31 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 12:41:31 UTC] PHP Stack trace:
+[17-Sep-2020 12:41:31 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:41:31 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:41:31 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:41:31 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:41:31 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:41:31 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:41:31 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:41:31 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:41:31 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:41:31 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:41:31 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:41:31 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:41:31 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:56
+[17-Sep-2020 12:41:31 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 12:41:31 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:41:31 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:41:31 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 12:41:31 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 12:41:31 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:42:32 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 12:42:32 UTC] PHP Stack trace:
+[17-Sep-2020 12:42:32 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:42:32 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:42:32 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:42:32 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:42:32 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:42:32 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:42:32 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:42:32 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:42:32 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:42:32 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:42:32 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:42:32 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:42:32 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:56
+[17-Sep-2020 12:42:32 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 12:42:32 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:42:32 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:42:32 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 12:42:32 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 12:42:32 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 12:53:38 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 12:53:38 UTC] PHP Stack trace:
+[17-Sep-2020 12:53:38 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 12:53:38 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 12:53:38 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 12:53:38 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 12:53:38 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 12:53:38 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 12:53:38 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 12:53:38 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 12:53:38 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 12:53:38 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 12:53:38 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 12:53:38 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 12:53:38 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:56
+[17-Sep-2020 12:53:38 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 12:53:38 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:53:38 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 12:53:38 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 12:53:38 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 12:53:38 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 13:12:51 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 13:12:51 UTC] PHP Stack trace:
+[17-Sep-2020 13:12:51 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 13:12:51 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 13:12:51 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 13:12:51 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 13:12:51 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 13:12:51 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 13:12:51 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 13:12:51 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 13:12:51 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 13:12:51 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 13:12:51 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 13:12:51 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 13:12:51 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:56
+[17-Sep-2020 13:12:51 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 13:12:51 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 13:12:51 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 13:12:51 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 13:12:51 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 13:12:52 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 13:24:13 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 13:24:13 UTC] PHP Stack trace:
+[17-Sep-2020 13:24:13 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 13:24:13 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 13:24:13 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 13:24:13 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 13:24:13 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 13:24:13 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 13:24:13 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 13:24:13 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 13:24:13 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 13:24:13 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 13:24:13 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 13:24:13 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 13:24:13 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:56
+[17-Sep-2020 13:24:13 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 13:24:13 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 13:24:13 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 13:24:13 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 13:24:13 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 13:24:13 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 13:25:37 UTC] PHP Notice:  Undefined variable: recipient_id in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 54
+[17-Sep-2020 13:25:37 UTC] PHP Stack trace:
+[17-Sep-2020 13:25:37 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 13:25:37 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 13:25:37 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 13:25:37 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 13:25:37 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 13:25:37 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 13:25:37 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 13:25:37 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 13:25:37 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 13:25:37 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 13:25:37 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 13:25:37 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 13:25:37 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 13:26:17 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php on line 1164
+[17-Sep-2020 13:26:17 UTC] PHP Stack trace:
+[17-Sep-2020 13:26:17 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 13:26:17 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 13:26:17 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 13:26:17 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 13:26:17 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 13:26:17 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 13:26:17 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 13:26:17 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 13:26:17 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 13:26:17 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 13:26:17 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 13:26:17 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 13:26:17 UTC] PHP  13. Message\Classes\Database->addMessage() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php:56
+[17-Sep-2020 13:26:17 UTC] PHP  14. wpdb->prepare() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Classes/Database.php:59
+[17-Sep-2020 13:26:17 UTC] PHP  15. array_walk() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 13:26:17 UTC] PHP  16. wpdb->escape_by_ref() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1398
+[17-Sep-2020 13:26:17 UTC] PHP  17. wpdb->_real_escape() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1251
+[17-Sep-2020 13:26:17 UTC] PHP  18. mysqli_real_escape_string() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/wp-db.php:1164
+[17-Sep-2020 13:26:17 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 13:27:25 UTC] PHP Notice:  Undefined variable: recipient_id in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 54
+[17-Sep-2020 13:27:25 UTC] PHP Stack trace:
+[17-Sep-2020 13:27:25 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 13:27:25 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 13:27:25 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 13:27:25 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 13:27:25 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 13:27:25 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 13:27:25 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 13:27:25 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 13:27:25 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 13:27:25 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 13:27:25 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 13:27:25 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 13:27:25 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 13:33:46 UTC] PHP Notice:  Trying to get property 'author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 13:33:46 UTC] PHP Stack trace:
+[17-Sep-2020 13:33:46 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 13:33:46 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 13:33:46 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 13:33:46 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 13:33:46 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 13:33:46 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 13:33:46 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 13:33:46 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 13:33:46 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 13:33:46 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 13:33:46 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 13:33:46 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 13:33:46 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 13:53:55 UTC] PHP Notice:  Trying to get property 'author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 13:53:55 UTC] PHP Stack trace:
+[17-Sep-2020 13:53:55 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 13:53:55 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 13:53:55 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 13:53:55 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 13:53:55 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 13:53:55 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 13:53:55 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 13:53:55 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 13:53:55 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 13:53:55 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 13:53:55 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 13:53:55 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 13:53:55 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 14:29:30 UTC] PHP Notice:  Trying to get property 'post_author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 14:29:30 UTC] PHP Stack trace:
+[17-Sep-2020 14:29:30 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 14:29:30 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 14:29:30 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 14:29:30 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 14:29:30 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 14:29:30 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 14:29:30 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 14:29:30 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 14:29:30 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 14:29:30 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 14:29:30 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 14:29:30 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 14:29:30 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'Test blablablablabla')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
+[17-Sep-2020 15:43:35 UTC] PHP Notice:  Trying to get property 'post_author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 15:43:35 UTC] PHP Stack trace:
+[17-Sep-2020 15:43:35 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 15:43:35 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 15:43:35 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 15:43:35 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 15:43:35 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 15:43:35 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 15:43:35 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 15:43:35 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 15:43:35 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 15:43:35 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 15:43:35 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 15:43:35 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 15:46:27 UTC] PHP Notice:  Trying to get property 'post_author' of non-object in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/plug-message/Rest/Message.php on line 50
+[17-Sep-2020 15:46:27 UTC] PHP Stack trace:
+[17-Sep-2020 15:46:27 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 15:46:27 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 15:46:27 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 15:46:27 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 15:46:27 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 15:46:27 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 15:46:27 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 15:46:27 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 15:46:27 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 15:46:27 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 15:46:27 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 15:46:27 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 17:33:14 UTC] PHP Notice:  Undefined index: recipient_id in /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp-content/plugins/messagerie/Rest/Message.php on line 50
+[17-Sep-2020 17:33:14 UTC] PHP Stack trace:
+[17-Sep-2020 17:33:14 UTC] PHP   1. {main}() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:0
+[17-Sep-2020 17:33:14 UTC] PHP   2. require() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/index.php:18
+[17-Sep-2020 17:33:14 UTC] PHP   3. wp() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-blog-header.php:16
+[17-Sep-2020 17:33:14 UTC] PHP   4. WP->main() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/functions.php:1285
+[17-Sep-2020 17:33:14 UTC] PHP   5. WP->parse_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:745
+[17-Sep-2020 17:33:14 UTC] PHP   6. do_action_ref_array() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp.php:388
+[17-Sep-2020 17:33:14 UTC] PHP   7. WP_Hook->do_action() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/plugin.php:544
+[17-Sep-2020 17:33:14 UTC] PHP   8. WP_Hook->apply_filters() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:311
+[17-Sep-2020 17:33:14 UTC] PHP   9. rest_api_loaded() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/class-wp-hook.php:287
+[17-Sep-2020 17:33:14 UTC] PHP  10. WP_REST_Server->serve_request() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api.php:339
+[17-Sep-2020 17:33:14 UTC] PHP  11. WP_REST_Server->dispatch() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:376
+[17-Sep-2020 17:33:14 UTC] PHP  12. Message\Rest\Message::post_user_message() /var/www/html/Apotheose/Back-End/projet-vente-materiel-puericulture/wp/wp-includes/rest-api/class-wp-rest-server.php:1050
+[17-Sep-2020 17:33:14 UTC] Erreur de la base de données WordPress Cannot add or update a child row: a foreign key constraint fails (`obabyshop`.`wp_messages_users_relationships`, CONSTRAINT `wp_messages_users_relationships_ibfk_2` FOREIGN KEY (`recipient_id`) REFERENCES `wp_users` (`ID`)) pour la requête 
+            INSERT INTO `wp_messages_users_relationships` (`sender_id`, `recipient_id`, `content`) VALUES (12, 0, 'coucou kikoo toi')
+         faite par require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, Message\Rest\Message::post_user_message, Message\Classes\Database->addMessage
