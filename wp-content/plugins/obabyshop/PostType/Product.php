@@ -34,7 +34,7 @@ class Product
         add_action('add_meta_boxes',[$this,'initialisation_metaboxes']);
         add_action('save_post',[$this, 'save_metaboxes']);
         add_filter('map_meta_cap', [$this, 'mapMetaCaps'], 10, 4);
-        add_filter('excerpt_length', [$this, 'new_excerpt_length'], 999);
+        add_filter('excerpt_length', [$this,'product_custom_excerpt_length'], 999);
     }
 
     /**
@@ -65,20 +65,6 @@ class Product
         add_theme_support('post-thumbnails', [self::NAME]);
     }
 
-    // Modify the word count of excerpts
-    function new_excerpt_length($length) {
-        global $post;
-        if ($post->post_type == 'post') {
-            return 40;
-        }
-        else if ($post->post_type == self::NAME){
-            return 20;
-        }
-        else {
-            return 50;  
-        }
-    }
-    
     /**
      * Unregister post type
      */
@@ -182,6 +168,10 @@ class Product
     
         /* Return the capabilities required by the user. */
         return $caps;
+    }
+
+    public function product_custom_excerpt_length($lenght) {
+        return 5;
     }
 
 }

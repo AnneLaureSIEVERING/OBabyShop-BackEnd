@@ -194,7 +194,7 @@ class Plugin
         );
     }
 
-
+    
     /**
      * triggered on plugin activation
      */
