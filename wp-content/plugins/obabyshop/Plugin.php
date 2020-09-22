@@ -7,6 +7,7 @@ use oBabyShop\Taxonomy\Category as TaxonomyCategory;
 use oBabyShop\Roles\User;
 use oBabyShop\Rest\Product as RestProduct;
 use oBabyShop\Rest\User as RestUser;
+use oBabyShop\Rest\SearchCity as RestCity;
 use oBabyShop\Capabilities\Administrator as AdministratorCapabilities;
 use oBabyShop\Capabilities\Editor as EditorCapabilities;
 use oBabyShop\Capabilities\User as UserCapabilities;
@@ -77,6 +78,14 @@ class Plugin
                 'registerRestCustomFields'
             ]
         );
+
+        add_action(
+            'rest_api_init',
+            [
+                $this,
+                'registerRestSearchCity'
+            ]
+        );
     }
 
     /**
@@ -95,6 +104,11 @@ class Plugin
     public function registerRestCustomFields()
     {
         RestProduct::registerCustomFields();
+    }
+
+    public function registerRestSearchCity()
+    {
+        RestCity::rest_city_endpoints();
     }
 
     /**
@@ -194,7 +208,7 @@ class Plugin
         );
     }
 
-
+    
     /**
      * triggered on plugin activation
      */
