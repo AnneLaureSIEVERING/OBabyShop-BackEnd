@@ -34,6 +34,7 @@ class Product
         add_action('add_meta_boxes',[$this,'initialisation_metaboxes']);
         add_action('save_post',[$this, 'save_metaboxes']);
         add_filter('map_meta_cap', [$this, 'mapMetaCaps'], 10, 4);
+        add_filter('rest_product_query' , [$this,'post_meta_request_params'] , 99 , 2);
         add_filter('excerpt_length', [$this,'product_custom_excerpt_length'], 999);
     }
 
@@ -168,6 +169,15 @@ class Product
     
         /* Return the capabilities required by the user. */
         return $caps;
+    }
+
+    public function  post_meta_request_params ($args , $request) {
+        $args += array(
+			'meta_key'   => $request['meta_key'],
+			'meta_value' => $request['meta_value'],
+            'meta_query' => $request['meta_query'],
+        );
+        return  $args;
     }
 
     public function product_custom_excerpt_length($lenght) {
