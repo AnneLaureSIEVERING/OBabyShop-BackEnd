@@ -18,9 +18,6 @@
     "require-dev": {
         "wpackagist-plugin/query-monitor": "3.6.0"
     },
-    "require-dev": {
-        "wpackagist-plugin/query-monitor": "3.6.0"
-    },
     "extra": {
         "wordpress-install-dir": "wp"
     }
