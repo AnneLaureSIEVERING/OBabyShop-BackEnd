@@ -4,44 +4,44 @@ namespace oBabyShop\Rest;
 
 use oBabyShop\PostType\Product as ProductPostType;
 
-class Product {
-
-    public static function register_product_meta_fields() {
-
-	    register_meta( 
-		    'post',
+class Product
+{
+    public static function register_product_meta_fields()
+    {
+        register_meta(
+            'post',
             'prix_produit',
-		    array(
+            array(
                 'type' => 'string',
                 'single' => true,
                 'show_in_rest' => true
             )
         );
 
-        register_meta( 
-		    'post',
+        register_meta(
+            'post',
             'dispo_produit',
-		    array(
+            array(
                 'type' => 'string',
                 'single' => true,
                 'show_in_rest' => true
             )
         );
 
-        register_meta( 
-		    'post',
+        register_meta(
+            'post',
             'localite_produit',
-		    array(
+            array(
                 'type' => 'string',
                 'single' => true,
                 'show_in_rest' => true
             )
         );
 
-        register_meta( 
-		    'user',
+        register_meta(
+            'user',
             'city',
-		    array(
+            array(
                 'type' => 'string',
                 'single' => true,
                 'show_in_rest' => true
@@ -54,18 +54,17 @@ class Product {
      */
     public static function registerCustomFields()
     {
-       
         register_rest_field(
             ProductPostType::NAME,
             'featured_media_url',
             [
-                'get_callback' => function ( $productArray ) {
-                    
-                    $featuredMediaUrl = get_the_post_thumbnail_url( $productArray['id'] );
+                'get_callback' => function ($productArray) {
+                    $featuredMediaUrl = get_the_post_thumbnail_url($productArray['id']);
 
                     return $featuredMediaUrl;
                 }
             ]
         );
-    } 
+    }
+
 }
