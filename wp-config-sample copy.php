@@ -20,16 +20,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'database_name_here' );
+define( 'DB_NAME', ' ' );
 
 /** MySQL database username */
-define( 'DB_USER', 'username_here' );
+define( 'DB_USER', ' ' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'password_here' );
+define( 'DB_PASSWORD', ' ' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', ' ' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -46,17 +46,17 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define('AUTH_KEY',         ' ');
+define('SECURE_AUTH_KEY',  ' ');
+define('LOGGED_IN_KEY',    ' ');
+define('NONCE_KEY',        ' ');
+define('AUTH_SALT',        ' ');
+define('SECURE_AUTH_SALT', ' ');
+define('LOGGED_IN_SALT',   ' ');
+define('NONCE_SALT',       ' ');
 
 // Plugin jwt auth
-define('JWT_AUTH_SECRET_KEY', 'your-top-secret-key');
+define('JWT_AUTH_SECRET_KEY', ' ');
 define('JWT_AUTH_CORS_ENABLE', true);
 
 /**#@-*/
@@ -68,6 +68,29 @@ define('JWT_AUTH_CORS_ENABLE', true);
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix = 'wp_';
+define('FS_METHOD', 'direct');
+
+define(
+    'WP_HOME',
+    rtrim(' ', '/')
+);
+
+define(
+    'WP_SITEURL',
+    WP_HOME . '/wp'
+);
+
+
+define(
+    'WP_CONTENT_URL',
+    WP_HOME . '/wp-content'
+);
+
+
+define(
+    'WP_CONTENT_DIR',
+    __DIR__ . '/wp-content'
+);
 
 /**
  * For developers: WordPress debugging mode.

@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":255:{a:2:{s:7:"defects";a:2:{s:37:"obabyshopMessagingTest::testUserLogin";i:5;s:41:"obabyshopMessagingTest::testUserMessaging";i:4;}s:5:"times";a:2:{s:37:"obabyshopMessagingTest::testUserLogin";d:0.121;s:41:"obabyshopMessagingTest::testUserMessaging";d:0.29;}}}

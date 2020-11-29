@@ -171,6 +171,7 @@ class Product
         return $caps;
     }
 
+    // function to search a product with meta (API)
     public function  post_meta_request_params ($args , $request) {
         $args += array(
 			'meta_key'   => $request['meta_key'],
@@ -180,6 +181,7 @@ class Product
         return  $args;
     }
 
+    // filter to attached a media at a post with API
     public function attach_media_to_post($response, $post, $request)
     {
         if ($request->get_method()!='POST') {
